@@ -12,15 +12,12 @@
 #-----------------------------------------------------------------
 
 list = []
-work = 0
+count = 0
 a = int(input())
 for _ in range(a):
     x = int(input())
-    if x % 10 < 10:
+    if x % 10 != 2 and x % 6 == 0:
         list.append(x)
-        work = 1
-    if work == 1:
-        print("YES")
-    if work == 0:
-        print("NO")
-#b = sum(list)
+        count += 1
+b = sum(list)/count
+print(b)
