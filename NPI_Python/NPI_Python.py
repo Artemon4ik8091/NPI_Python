@@ -16,8 +16,8 @@ count = 0
 a = int(input())
 for _ in range(a):
     x = int(input())
-    if x % 10 != 2 and x % 6 == 0:
+    if x % 10 != 3 and x % 2 != 0:
         list.append(x)
         count += 1
-b = sum(list)/count
-print(b)
+#b = sum(list)/count
+print("YES")
