@@ -10,3 +10,17 @@
 # 9.
 # 10. 56 59 54
 #-----------------------------------------------------------------
+
+list = []
+work = 0
+a = int(input())
+for _ in range(a):
+    x = int(input())
+    if x % 10 < 10:
+        list.append(x)
+        work = 1
+    if work == 1:
+        print("YES")
+    if work == 0:
+        print("NO")
+#b = sum(list)
